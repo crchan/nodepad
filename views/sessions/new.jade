@@ -1,0 +1,8 @@
+.page
+  h2 Log In
+  p
+    a.button(href='/users/new') Register
+  form(method='post', action='/sessions')
+    !=partial('../partials/users/fields', { locals: {user: user} })
+    div
+      input(type='submit', value='Log in')
